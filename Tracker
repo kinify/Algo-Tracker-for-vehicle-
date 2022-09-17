@@ -1,0 +1,17 @@
+def number(bus_stops):
+    people_in = []
+    people_out = []
+    ppl_in = 0
+    ppl_out = 0
+    for i in bus_stops:
+        people_in.append(i[0])
+        people_out.append(i[-1])
+
+    for i in people_in:
+        ppl_in += int(i)
+    for i in people_out:
+        ppl_out += int(i)
+    result = int(ppl_in) - int(ppl_out)
+    return result
+
+        
